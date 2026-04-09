@@ -1,9 +1,6 @@
 [build]
-  command = "npm ci"
-  publish = "dist"
-
-[functions]
-  node_bundler = "esbuild"
+  command = "npm ci && npm run build"
+  publish = "build"
 
 [build.environment]
-  NODE_VERSION = "16.x"
+  NODE_VERSION = "20"
